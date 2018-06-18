@@ -1,6 +1,6 @@
 starting_sentence = "Hi from macthing land"
 sentence_array = starting_sentence.split("").map(&:downcase)
-accurate_count = starting_sentence - [" "]
+accurate_count = sentence_array - [" "]
 final_sentence = starting_sentence.gsub(/[a-zA-Z]/, "_").split("")
 
 while sentence_array.count("") < accurate_count.count 
